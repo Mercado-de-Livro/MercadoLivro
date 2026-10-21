@@ -81,3 +81,21 @@ document.getElementById('generate-preview-btn').addEventListener('click', functi
   img.alt = 'Prévia do livro';
   containerPrevia.appendChild(img);
 });
+
+
+document.querySelectorAll('.btn-card').forEach(function (botao) {
+  const textoOriginal = botao.textContent;
+ 
+  botao.addEventListener('mouseover', function () {
+    botao.textContent = 'Clique aqui!';
+  });
+ 
+  botao.addEventListener('mouseout', function () {
+    botao.textContent = textoOriginal;
+  });
+ 
+  botao.addEventListener('click', function () {
+    botao.textContent = 'Adicionado!';
+  });
+});
+ 
