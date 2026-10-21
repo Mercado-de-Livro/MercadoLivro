@@ -16,3 +16,18 @@ document.getElementById('update-title-btn').addEventListener('click', function (
     tituloPrincipal.textContent = tituloOriginal + ' - ' + inputTitulo.value;
   }
 });
+
+const titulosCards = document.querySelectorAll('.card h3');
+const inputPosicao = document.getElementById('highlight-pos');
+const inputLivro = document.getElementById('highlight-title');
+ 
+document.getElementById('update-highlight-btn').addEventListener('click', function () {
+  const posicao = Number(inputPosicao.value);
+ 
+  if (inputLivro.value === '' || posicao < 1 || posicao > 3) {
+    alert('Digite o nome do livro e uma posição de 1 a 3.');
+    return;
+  }
+ 
+  titulosCards[posicao - 1].textContent = inputLivro.value;
+});
