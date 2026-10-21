@@ -58,3 +58,26 @@ document.getElementById('check-month-btn').addEventListener('click', function ()
     resultadoMes.textContent = lancamentos[numero - 1];
   }
 });
+
+
+const containerPrevia = document.getElementById('preview-container');
+ 
+const imagemPrevia = 'data:image/svg+xml,' + encodeURIComponent(
+  '<svg xmlns="http://www.w3.org/2000/svg" width="160" height="220">' +
+  '<rect width="160" height="220" fill="#14213d"/>' +
+  '<text x="80" y="110" font-size="18" fill="#fff" text-anchor="middle">Prévia</text>' +
+  '</svg>'
+);
+ 
+document.getElementById('generate-preview-btn').addEventListener('click', function () {
+  if (document.getElementById('preview-img')) {
+    alert('A prévia já foi gerada.');
+    return;
+  }
+ 
+  const img = document.createElement('img');
+  img.id = 'preview-img';
+  img.src = imagemPrevia;
+  img.alt = 'Prévia do livro';
+  containerPrevia.appendChild(img);
+});
