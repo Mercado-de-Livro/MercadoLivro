@@ -31,3 +31,30 @@ document.getElementById('update-highlight-btn').addEventListener('click', functi
  
   titulosCards[posicao - 1].textContent = inputLivro.value;
 });
+
+const lancamentos = [
+  'Janeiro: Lógica de Programação para Iniciantes',
+  'Fevereiro: HTML e CSS na Prática',
+  'Março: JavaScript Moderno',
+  'Abril: Banco de Dados com SQL',
+  'Maio: Python do Zero',
+  'Junho: Git e GitHub em Equipe',
+  'Julho: Algoritmos Ilustrados',
+  'Agosto: Node.js na Prática',
+  'Setembro: Segurança para Desenvolvedores',
+  'Outubro: Docker em 7 Dias',
+  'Novembro: Inteligência Artificial para Devs',
+  'Dezembro: Carreira em Tecnologia'
+];
+const inputMes = document.getElementById('month-input');
+const resultadoMes = document.getElementById('month-result');
+ 
+document.getElementById('check-month-btn').addEventListener('click', function () {
+  const numero = Number(inputMes.value);
+ 
+  if (numero < 1 || numero > lancamentos.length) {
+    resultadoMes.textContent = 'Digite um número de 1 a ' + lancamentos.length + '.';
+  } else {
+    resultadoMes.textContent = lancamentos[numero - 1];
+  }
+});
