@@ -3,10 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Livre</title>
+    <title>Mercado Livro</title>
     <link rel="stylesheet" href="./src/css/estilo.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>MercadoLivro</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Pesquisar títulos de livros ou tecnologias">
+        </div>
+        <nav>
+            <a href="#">Crie sua Conta</a>
+            <a href="#">Entre</a>
+            <a href="#">Compras</a>
+            <div id="cart-icon">Carrinho</div>
+            <label>
+                <input type="checkbox" id="theme-checkbox"> Dark/Light Mode
+            </label>
+        </nav>
+    </header>
+
+    <section class="banner-promocional">
+        <h2>Campanha e Lançamentos de Livros</h2>
+    </section>
+    
+      <main>
+        <section class="interactive-section">
+            <input type="text" id="user-title-input" placeholder="Digite seu nome ou preferência">
+            <button id="update-title-btn">Atualizar Título</button>
+        </section>
+
+        <section class="interactive-section">
+            <input type="number" id="highlight-pos" placeholder="Posição (1 a 3)">
+            <input type="text" id="highlight-title" placeholder="Nome do livro">
+            <button id="update-highlight-btn">Atualizar Destaque</button>
+        </section>
+
+        <section class="interactive-section">
+            <input type="number" id="month-input" placeholder="Número do mês/categoria">
+            <button id="check-month-btn">Ver Lançamento</button>
+            <div id="month-result"></div>
+        </section>
+
+        <section class="interactive-section">
+            <button id="generate-preview-btn">Gerar Prévia do Livro</button>
+            <div id="preview-container"></div>
+        </section>
+                <section id="cards">
+            <div class="card">
+                <img src="" alt="Livro de Programação">
+                <h3>o dia a dia do programador</h3>
+                <p>um livro feito por Wellington Cidade </p>
+                <button class="btn-card">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="" alt="E-book">
+                <h3>E-book de Tecnologia</h3>
+                <p>Um e-book que explica temas sobre tecnologia</p>
+                <button class="btn-card">Mostrar</button>
+            </div>
+            <div class="card">
+                <img src="" alt="Kit de Desenvolvimento">
+                <h3>Livro sobre tecnologia</h3>
+                <p>Um livro que fala sobre tecnologia.</p>
+                <button class="btn-card">Comprar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MercadoLivro. Todos os direitos reservados.</p>
+    </footer>
     
     <script src="./src/js/script.js"></script>
 </body>
