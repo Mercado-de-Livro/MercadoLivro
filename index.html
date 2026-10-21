@@ -29,6 +29,29 @@
         <h2>Campanha e Lançamentos de Livros</h2>
     </section>
     
+      <main>
+        <section class="interactive-section">
+            <input type="text" id="user-title-input" placeholder="Digite seu nome ou preferência">
+            <button id="update-title-btn">Atualizar Título</button>
+        </section>
+
+        <section class="interactive-section">
+            <input type="number" id="highlight-pos" placeholder="Posição (1 a 3)">
+            <input type="text" id="highlight-title" placeholder="Nome do livro">
+            <button id="update-highlight-btn">Atualizar Destaque</button>
+        </section>
+
+        <section class="interactive-section">
+            <input type="number" id="month-input" placeholder="Número do mês/categoria">
+            <button id="check-month-btn">Ver Lançamento</button>
+            <div id="month-result"></div>
+        </section>
+
+        <section class="interactive-section">
+            <button id="generate-preview-btn">Gerar Prévia do Livro</button>
+            <div id="preview-container"></div>
+        </section>
+    
     <script src="./src/js/script.js"></script>
 </body>
 </html>
