@@ -1,0 +1,69 @@
+/* Bloco 1: Reset, Variáveis, Estilos Globais e Cabeçalho */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+  background-color: #f4f5f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Suporte ao Dark Mode (acionado pelo checkbox no JS) */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body.dark-mode header {
+  background-color: #1f1f1f;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #14213d;
+}
+
+body.dark-mode header h1 {
+  color: #ffffff;
+}
+
+.search-bar input {
+  padding: 0.5rem 1rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+body.dark-mode nav a {
+  color: #ccc;
+}
+
+#cart-icon {
+  cursor: pointer;
+}
