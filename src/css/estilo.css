@@ -202,3 +202,45 @@ body.dark-mode footer {
   color: #aaa;
   border-top: 1px solid #333;
 }
+
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  nav {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  
+  .banner-promocional {
+    padding: 1.5rem 1rem;
+  }
+
+  .banner-promocional h2 {
+    font-size: 1.25rem;
+  }
+
+
+  .interactive-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .interactive-section input,
+  .interactive-section button {
+    width: 100%;
+  }
+}
+
